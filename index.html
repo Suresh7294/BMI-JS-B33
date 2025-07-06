@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <script src="BMI.js"></script>
+    <style>
+    .container{
+       margin-left: 30%;      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-position: center;
+       background-color: white;
+       width:40%;
+       height: 100vh;
+       color: navy;
+       font-size: 30px;
+    }
+    .btn{
+        padding:auto;
+        font-size: 20px;
+        border-radius: 15px;
+        border:5px double navy ;
+        background-color:white;
+        color: navy;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        height : 40px;
+        width: 30%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>Enter your  Weight & Height to Find your BMI</h2>
+
+        <label>Enter the Weight :</label>
+        <input type="text" id="weight" placeholder="  eg : 58 kg"><br><br>
+
+        <label>Enter the Height :</label>
+        <input type="text" id="height" placeholder="  eg : 177 cm"><br><br>
+
+        <button class="btn"  type="button" onclick="getbmi()">Calculate BMI</button>
+          <p id="result"></p>
+        </form>
+       
+    </div>
+    <p id="result"></p>
+
+</body> 
+</html>
